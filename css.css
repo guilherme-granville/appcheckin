@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    color: #333333;
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+fieldset{
+    border: none;
+}
+
+#login-form {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 90%;
+    overflow: hidden;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 15px 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    font-size: 18px;
+    color: #333;
+    transition: border-color 0.3s, padding-top 0.3s;
+}
+
+.input-container input:focus {
+    outline: none;
+    border-color: #4CAF50;
+    padding-top: 25px;
+}
+
+.input-container label {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: #777;
+    font-size: 16px;
+    pointer-events: none;
+    transition: top 0.3s, font-size 0.3s;
+}
+
+.input-container input:focus + label,
+.input-container input:not(:placeholder-shown) + label {
+    top: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+#forgot-password {
+    margin-top: 15px;
+    text-align: right;
+}
+
+#forgot-password a {
+    color: #777777;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#forgot-password a:hover {
+    color: #555555;
+}
+
+#login-form footer {
+    margin-top: 20px;
+    color: #777;
+    font-size: 14px;
+    text-align: center;
+}
+
+#login-form footer a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#login-form footer a:hover {
+    color: #0056b3;
+}

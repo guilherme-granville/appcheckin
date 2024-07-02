@@ -1,0 +1,19 @@
+{
+    "name": "APP Todo-list",
+    "short_name": "Listinha",
+    "start_url": ".",
+    "Display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#3f51bc",
+    "icons": [{
+        "src": "icons/ic192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+},
+{
+    "src": "icons/ic512.png",
+    "sizes": "512x12",
+    "type": "image/png"
+}
+]
+    }
